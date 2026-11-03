@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main() {
+	int agirlik=0;
+	int adet=0;
+	int kg;
+	while(agirlik<=500)
+	{
+		printf("Agirlik gir-> ");
+		scanf("%d",&kg);
+		if(kg+agirlik<=500)
+		{
+		agirlik=agirlik+kg;
+		adet=adet+1;
+		}
+		else
+		{
+		printf("Kapasite asildi.\nToplam agirlik-> %d\nToplam miktar-> %d\n",agirlik,adet);
+		break;
+		}
+	}
+
+	
+	return 0;
+}
